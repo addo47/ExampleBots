@@ -1,0 +1,19 @@
+group 'org.telegram'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile 'com.github.addo37:AbilityBots:v1.0.0'
+    compile 'org.telegram:telegrambots:2.4.4.5'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.mockito:mockito-all:2.0.2-beta'
+}
