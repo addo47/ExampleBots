@@ -11,7 +11,7 @@ public class Application {
 
         TelegramBotsApi api = new TelegramBotsApi();
         try {
-            api.registerBot(new ExampleBot());
+            api.registerBot(new HelloBot());
         } catch (TelegramApiRequestException e) {
             BotLogger.error("Oops, something went wrong while registering bot", e);
         }
